@@ -1,0 +1,15 @@
+ 
+.input-name{
+    padding: 5px;
+    font-weight: 600;
+}
+
+.btn{
+    padding: 5px;
+    margin-left: 20px;
+      border: none;
+      border: 2px solid black;
+      border-radius: 10px;
+       font-weight: 600;
+       background-color: aliceblue;
+}
