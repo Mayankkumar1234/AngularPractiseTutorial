@@ -1,0 +1,17 @@
+<div class="wrap">
+  <form class="serverForm" [formGroup]="serverForm"  >
+    <h2 class="form-title">Add New Server</h2>
+    <div class="form-group">
+      <label for="serverName">Server Name</label>
+      <input id="serverName" type="text"  formControlName="serverName"   placeholder="e.g. production-api">
+    </div>
+    <div class="form-group">
+      <label for="serverContent">Server Content</label>
+      <input id="serverContent" type="text"  formControlName="serverContent"  placeholder="e.g. Node.js backend">
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-primary" (click)="sendServerData('actual')">Add Server</button>
+      <button class="btn btn-secondary" (click)="sendServerData('Blueprint')"  >Add Blueprint</button>
+    </div>
+  </form>
+</div>

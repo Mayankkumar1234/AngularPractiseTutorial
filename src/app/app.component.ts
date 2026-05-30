@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+[x: string]: any;
   title = 'my-angular9-app';
+
+  addServer(event:any){
+   console.log("Event")
+  }
 }

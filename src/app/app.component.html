@@ -1,10 +1,16 @@
- <h1 class="main-heading" >I'm in the App component!</h1>
+ <!-- <h1 class="main-heading" >I'm in the App component!</h1> -->
 
- <hr>
 
-<app-servers></app-servers>
+<!-- <app-servers></app-servers> -->
 
-<h1>Why it is not working...</h1>
+<!-- <h1>Why it is not working...</h1> -->
 
 <!-- <app-directive></app-directive> -->
 
+
+
+<app-cockpit
+ (serverDataSend)="addServer($event)"
+></app-cockpit>
+
+<app-server-element></app-server-element>

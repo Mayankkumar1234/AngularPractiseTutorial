@@ -22,7 +22,7 @@ export class ServersComponent{
     // constructor(private userService:UserService){}
 
 
-    constructor(){
+    constructor(private userService:UserService){
         this.serverId = Math.floor(Math.random()*100)
     }
 
@@ -34,6 +34,8 @@ export class ServersComponent{
     ngOnInit(){
 
         console.log("Component is loaded or not!")
+
+        console.log("User Service Data", this.userService.getUsers())
     //    this.counterSubscription  =  interval(1000).subscribe((count)=>{
     //         console.log("Counter", count)
     //     })
@@ -80,18 +82,18 @@ export class ServersComponent{
 
 // })    
 
-  const myPromise  = new Promise((resolve , reject)=>{
+  // const myPromise  = new Promise((resolve , reject)=>{
 
-    let count = 0;
-    setInterval(()=>{
-      resolve(count);
-      count++;
-    },2000) 
-  })
+  //   let count = 0;
+  //   setInterval(()=>{
+  //     resolve(count);
+  //     count++;
+  //   },2000) 
+  // })
 
-  myPromise.then((data)=>{
-    console.log("Promise resolved with data:", data)
-  } )   
+  // myPromise.then((data)=>{
+  //   console.log("Promise resolved with data:", data)
+  // } )   
   
 
 }
