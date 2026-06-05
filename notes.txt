@@ -37,3 +37,14 @@
 
 How change detections works in angular compared it with react virtual dom :-
 
+
+
+Property and event Binding :-
+
+ - We can bind event and Property : 
+   
+  1. HTML Elments (Native Properties and events)
+  2. Directives (Custom properties and events)
+  3. Components (Custom properties and events)
+  79io0p=
++

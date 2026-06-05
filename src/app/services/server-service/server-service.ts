@@ -8,5 +8,4 @@ Injectable()
 export class ServerService{
      serverData:ServerData[] = [];
 
-     addServerData()
 }
